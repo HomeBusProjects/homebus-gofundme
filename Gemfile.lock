@@ -1,0 +1,34 @@
+GIT
+  remote: git@github.com:HomeBusProjects/ruby-homebus-application.git
+  revision: 34e9e67c246a3a26b1f87a634daf21bb5aee67d1
+  specs:
+    homebus_app (0.2.1)
+      dotenv
+      mqtt
+
+GIT
+  remote: https://github.com/HomeBusProjects/ruby-homebus
+  revision: 64d64f26adf2e82d4c8cb7219bdd534f2275f817
+  specs:
+    homebus (0.3.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dotenv (2.7.5)
+    mini_portile2 (2.4.0)
+    mqtt (0.5.0)
+    nokogiri (1.10.9)
+      mini_portile2 (~> 2.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  homebus!
+  homebus_app!
+  mqtt
+  nokogiri
+
+BUNDLED WITH
+   2.1.2
