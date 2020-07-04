@@ -64,17 +64,18 @@ class GoFundMeHomebusApp < HomeBusApp
 
   def work!
     gofundme_status = _get_gofundme
-    pp gofundme_status
-
-    answer =  {
-      id: @uuid,
-      timestamp: Time.now.to_i
-    }
+    if options[:verbose]
+      pp gofundme_status
+    end
 
     if gofundme_status
-      answer[DDC] =  gofundme_status
+      answer =  gofundme_status
     else
-      answer[DDC] = { status: :failure }
+      answer = { status: :failure }
+    end
+
+    if options[:verbose]
+      pp answer
     end
 
     publish! DDC, answer
