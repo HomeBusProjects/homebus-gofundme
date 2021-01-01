@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'nokogiri', '~> 1.11.0.rc4'
+gem 'nokogiri', '~> 1.11.0.rc1'
 
 gem 'mqtt'
 gem 'homebus', git: 'https://github.com/HomeBusProjects/ruby-homebus'
