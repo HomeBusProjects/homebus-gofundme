@@ -30,7 +30,7 @@ DEPENDENCIES
   homebus!
   homebus_app!
   mqtt
-  nokogiri
+  nokogiri (~> 1.11.0.rc4)
 
 BUNDLED WITH
    2.1.2
