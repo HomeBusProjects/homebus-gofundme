@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:HomeBusProjects/ruby-homebus-application.git
-  revision: 44834e453a8d2c1c9009364dd5e72994f1a386b3
+  revision: a75bbad8107bedd146e4dbd1ba80ed89edb3291c
   specs:
     homebus_app (0.9.6)
       dotenv
@@ -8,29 +8,28 @@ GIT
 
 GIT
   remote: https://github.com/HomeBusProjects/ruby-homebus
-  revision: 64d64f26adf2e82d4c8cb7219bdd534f2275f817
+  revision: fdb2c62826e3c53f47749a9f31c51f438fcf943d
   specs:
-    homebus (0.3.1)
+    homebus (0.10.14)
+      mqtt (~> 0.5.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    dotenv (2.7.6)
-    mini_portile2 (2.5.1)
+    dotenv (2.8.1)
     mqtt (0.5.0)
-    nokogiri (1.11.5)
-      mini_portile2 (~> 2.5.0)
+    nokogiri (1.13.10-arm64-darwin)
       racc (~> 1.4)
-    racc (1.5.2)
+    racc (1.6.1)
 
 PLATFORMS
-  ruby
+  arm64-darwin-21
 
 DEPENDENCIES
   homebus!
   homebus_app!
   mqtt
-  nokogiri (~> 1.11.0.rc4)
+  nokogiri
 
 BUNDLED WITH
-   2.1.2
+   2.3.25
